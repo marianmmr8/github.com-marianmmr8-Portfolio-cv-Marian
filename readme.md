@@ -5,6 +5,10 @@ Mas abajo dejo el codigo del avatar , donde hay varios avatares y puedes elegir 
 
 En mi portfolio hablo un poco sobre mí,lo que realmente me motiva y para lo que me estoy formando ,hablo de mi expereincia laboral donde ademas de ver mis trabajos te puedes descargar mi cv actualizadoy y también hay un apartado hablando de mis proyectos donde puedes ver un enlace a mi github.
 
+Lo puedes ver en Netlify
+https://portfolio-marian.netlify.app
+
+
 ### Creación Código
 
  
