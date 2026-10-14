@@ -27,7 +27,7 @@ body {
   padding: 24px;
 }
 .wrap { max-width: 1100px; min-height: calc(100vh - 48px); margin: 0 auto; display: grid; grid-template-rows: auto 1fr auto; gap: 34px; }
-.site-header { display: flex; justify-content: space-between; align-items: center; gap: 20px; }
+.site-header { display: flex; justify-content: space-between; align-items: center; gap: 20px; max-width: 1100px;margin: 0 auto;}
 .brand { font-family: var(--display); font-weight: 800; font-size: 20px; text-decoration: none; color: var(--fg); }
 .brand span { color: var(--accent); }
 .eyebrow { font-family: var(--mono); font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
