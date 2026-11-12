@@ -73,19 +73,29 @@
           >MR<span>.</span></a
         >
         <span class="eyebrow">Portafolio · IT y desarrollo web</span>
-        <button
-          class="theme-toggle"
-          type="button"
-          data-theme-toggle
-          aria-label="Cambiar a modo oscuro"
-          aria-pressed="false"
-        >
-          Tema: claro
-        </button>
+        <div class="header-actions">
+          <details class="section-menu">
+            <summary>Secciones</summary>
+            <nav class="section-menu-links" aria-label="Navegación por secciones">
+              <a href="#about-title">Sobre mí</a>
+              <a href="#experience-title">Experiencia laboral</a>
+              <a href="#projects-title">Proyectos</a>
+            </nav>
+          </details>
+          <button
+            class="theme-toggle"
+            type="button"
+            data-theme-toggle
+            aria-label="Cambiar a modo oscuro"
+            aria-pressed="false"
+          >
+            Tema: claro
+          </button>
+        </div>
       </header>
 
       <main>
-        <section class="demo" aria-label="Presentación">
+        <section class="demo intro-section" aria-label="Presentación">
           <div class="stage-box">
             <span class="portrait-label"
               >Un poco de tecnología, un poco de creatividad</span>
@@ -103,19 +113,17 @@
             </p>
           </div>
 
-          <article class="panel">
+          <article class="panel" aria-labelledby="about-title">
             <span class="eyebrow">Hola, soy</span>
-            <h1>María de los <em>Angeles</em> Martín Rojas</h1>
+            <h1 id="about-title">María de los <em>Angeles</em> Martín Rojas</h1>
             <p class="role">
               Estudiante SMR <span aria-hidden="true">·</span> Estudiante de
               desarrollo web
             </p>
             <p class="intro">
-              Me apasiona el mundo tecnológico, cuanto más aprendo de él más me
-              gusta , tengo bastante experiencia en otros ambitos laborales pero
-              sé que este mundo es lo que realmente me motiva y me gusta ,a
-              veces cuando me equivoco me frustro pero pienso que cada error es
-              una aprendizaje que me lleva a mi meta.
+              Soy estudiante de SMR y desarrollo web. Me apasiona la tecnología
+              y sigo aprendiendo cada día: cada reto y cada error me ayudan a
+              acercarme a mi objetivo profesional.
             </p>
             <ul class="skills" aria-label="Conocimientos">
               <li>HTML</li>
@@ -126,63 +134,214 @@
             <div class="about">
               <span class="more">Sobre mí</span>
               <p>
-                Sigo aprendiendo y creciendo en el desarrollo web. Me motiva
-                transformar ideas cotidianas en
-                <strong>soluciones digitales útiles</strong>, sencillas y
-                creativas.
+                Soy curiosa y creativa; disfruto convirtiendo ideas en
+                <strong>webs y aplicaciones útiles e interactivas</strong>.
+                También diseñé, con ayuda de IA, un avatar inspirado en mí que
+                sigue el movimiento del cursor.
               </p>
             </div>
           </article>
-          </section>
-<!-- Seccion trabajo -->
+        </section>
 
-<section class="demo" aria-label="Presentación">
-          <div class="stage-box">
-            <span class="portrait-label"></span>
-          <article class="panel">
-            <span class="eyebrow"></span>
-            <h1>Experiencia</h1> <h1><em>Laboral</em></h1>
-            <p class="role">
-              <span aria-hidden="true"> Me encanta aprender y probar cosas nuevas</span> 
-            </p>
-            <p class="intro">
-              Tengo más de 15 años de experiencia en varios sectores, siempre buscando un lugar para dar lo mejor de mí y crecer profesionalmente
-             
-            </p>
-            <ul class="skills" aria-label="Conocimientos">
-               <ul class="skills" aria-label="Conocimientos">
-                <li><a href="mariancv.pdf" download alt = "descargar cv en pdf">Descargar CV.PDF</a> </li>
-              <li><a href="trabajos.html" target="_blank">Hostelería</a> </li>
-              <li> <a href="trabajosdependienta.html" target="_blank">Atención al cliente</a></li>
-              <li> <a href="trabajosadministrativa.html" target="_blank">Administrativo</a></li>
-            </ul>
-             </div>
-          </article>
-</section>
+        <section class="projects-section" aria-labelledby="projects-title" id="projects">
+          <div class="projects-heading">
+            <h1 id="projects-title"><em>Proyectos</em></h1>
+            <article class="panel project-overview">
+              <p>
+                En mis proyectos practico cómo estructurar páginas con HTML,
+                darles estilo con CSS y añadir interacción con JavaScript.
+                He creado desde juegos y aplicaciones que responden a las
+                acciones de quien las usa hasta webs informativas y herramientas
+                para organizar tareas o resolver necesidades cotidianas.
+              </p>
+              <p>
+                También estoy explorando Python, PHP y bases de datos. Cada
+                proyecto me permite probar ideas, resolver problemas y dar
+                forma a experiencias digitales claras, útiles y creativas.
+                Puedes ver las demos publicadas o consultar el código.
+              </p>
+            </article>
+          </div>
 
-<!-- seccion Proyectos -->
-<section class="demo" aria-label="Presentación">
-          <div class="stage-box">  </div>
+          <div class="project-grid">
+            <article class="panel project-card">
+              <span class="project-status">Demo online</span>
+              <h2>Galleta Game</h2>
+              <p>
+                Un juego sencillo: haz clic en la galleta para avanzar de nivel;
+                cada diez clics, cambia y gira.
+              </p>
+              <ul class="skills" aria-label="Tecnologías de Galleta Game">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+              </ul>
+              <div class="project-links">
+                <a href="https://galletitagame.netlify.app" target="_blank" rel="noopener noreferrer">Ver demo</a>
+                <a href="https://github.com/marianmmr8/galletagame" target="_blank" rel="noopener noreferrer">Ver código</a>
+              </div>
+            </article>
+
+            <article class="panel project-card">
+              <span class="project-status">Demo online</span>
+              <h2>¿Qué hará mi adolescente?</h2>
+              <p>
+                Una pequeña app interactiva que responde de forma aleatoria a
+                las preguntas que escribas.
+              </p>
+              <ul class="skills" aria-label="Tecnologías de ¿Qué hará mi adolescente?">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+              </ul>
+              <div class="project-links">
+                <a href="https://queharamiadolescente.netlify.app" target="_blank" rel="noopener noreferrer">Ver demo</a>
+                <a href="https://github.com/marianmmr8/adolescentes" target="_blank" rel="noopener noreferrer">Ver código</a>
+              </div>
+            </article>
+
+            <article class="panel project-card">
+              <span class="project-status">Demo online</span>
+              <h2>Club de Montaña</h2>
+              <p>
+                Web ficticia sobre rutas de Granada, con información de
+                actividades y cursos. También revisé su accesibilidad con WAVE.
+              </p>
+              <ul class="skills" aria-label="Tecnologías de Club de Montaña">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Accesibilidad</li>
+              </ul>
+              <div class="project-links">
+                <a href="https://clubdemontana.netlify.app" target="_blank" rel="noopener noreferrer">Ver demo</a>
+                <a href="https://github.com/marianmmr8/Clubdemontana" target="_blank" rel="noopener noreferrer">Ver código</a>
+              </div>
+            </article>
+
+            <article class="panel project-card">
+              <span class="project-status">Demo online</span>
+              <h2>Web para Anécaevo</h2>
+              <p>
+                Mi primera web para el negocio de mi madre, creada como práctica
+                con HTML, CSS y JavaScript.
+              </p>
+              <ul class="skills" aria-label="Tecnologías de la web para Anécaevo">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+              </ul>
+              <div class="project-links">
+                <a href="https://anecaevo.netlify.app" target="_blank" rel="noopener noreferrer">Ver demo</a>
+                <a href="https://github.com/marianmmr8/miprimeritaweb-main" target="_blank" rel="noopener noreferrer">Ver código</a>
+              </div>
+            </article>
+
+            <article class="panel project-card">
+              <span class="project-status">Demo online</span>
+              <h2>Mi primer portfolio</h2>
+              <p>
+                Un portfolio ficticio de empresa, uno de mis primeros trabajos
+                construidos con HTML y CSS.
+              </p>
+              <ul class="skills" aria-label="Tecnologías de Mi primer portfolio">
+                <li>HTML</li>
+                <li>CSS</li>
+              </ul>
+              <div class="project-links">
+                <a href="https://mariansweb.netlify.app" target="_blank" rel="noopener noreferrer">Ver demo</a>
+                <a href="https://github.com/marianmmr8/PORTFOLIO-N1" target="_blank" rel="noopener noreferrer">Ver código</a>
+              </div>
+            </article>
+
+            <article class="panel project-card">
+              <span class="project-status">Demo pendiente de publicar</span>
+              <h2>Hogar en equilibrio</h2>
+              <p>
+                Web para organizar las tareas de limpieza de la semana y
+                consultar trucos prácticos para cuidar el hogar.
+              </p>
+              <ul class="skills" aria-label="Tecnologías de Hogar en equilibrio">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+              </ul>
+              <div class="project-links">
+                <a href="https://github.com/marianmmr8/proyecto-web-amas-de-casa" target="_blank" rel="noopener noreferrer">Ver código</a>
+              </div>
+            </article>
+
+            <article class="panel project-card">
+              <span class="project-status">Demo online</span>
+              <h2>Avisos de Conserjería</h2>
+              <p>
+                Aplicación para enviar avisos del alumnado desde conserjería a
+                las aulas y confirmar su recepción.
+              </p>
+              <ul class="skills" aria-label="Tecnologías de Avisos de Conserjería">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+              </ul>
+              <div class="project-links">
+                <a href="https://avisos-conserjeria.vercel.app/" target="_blank" rel="noopener noreferrer">Ver demo</a>
+                <a href="https://github.com/marianmmr8/avisos-conserjeria" target="_blank" rel="noopener noreferrer">Ver código</a>
+              </div>
+            </article>
+
+            <article class="panel project-card">
+              <span class="project-status">Demo online</span>
+              <h2>Biblioteca municipal</h2>
+              <p>
+                Proyecto de base de datos y consultas para una biblioteca,
+                trabajando con MySQL/MariaDB y acceso desde PHP con PDO.
+              </p>
+              <ul class="skills" aria-label="Tecnologías de Biblioteca municipal">
+                <li>PHP</li>
+                <li>MySQL</li>
+                <li>PDO</li>
+              </ul>
+              <div class="project-links">
+                <a href="https://regbibliotecamunicipal.vercel.app/" target="_blank" rel="noopener noreferrer">Ver demo</a>
+                <a href="https://github.com/marianmmr8/biblioteca" target="_blank" rel="noopener noreferrer">Ver código</a>
+              </div>
+            </article>
+
+            <article class="panel project-card">
+              <span class="project-status">Demo pendiente de publicar</span>
+              <h2>Gestión de películas</h2>
+              <p>
+                Aplicación PHP para administrar películas y directores con una
+                base de datos MySQL/MariaDB, preparada para ejecutar en XAMPP.
+              </p>
+              <ul class="skills" aria-label="Tecnologías de Gestión de películas">
+                <li>PHP</li>
+                <li>MySQL</li>
+                <li>PDO</li>
+              </ul>
+              <div class="project-links">
+                <a href="https://github.com/marianmmr8/peliculas" target="_blank" rel="noopener noreferrer">Ver código</a>
+              </div>
+            </article>
+
+          </div>
+        </section>
+
+        <section class="experience-section" aria-labelledby="experience-title" id="experience">
           <article class="panel">
-            <h1><em>Proyectos</em></h1>
+            <span class="eyebrow">Trayectoria profesional</span>
+            <h1 id="experience-title">Experiencia <em>Laboral</em></h1>
+            <p class="role">Me encanta aprender y probar cosas nuevas</p>
             <p class="intro">
-         Me considero una persona curiosa y con afán de aprender , desde que empecé a curiosear en el desarrollo y el mundo tecnológico no hay día que no me duerma sin saber algo nuevo , para mí es un mundo del que queda mucho por descubrir.
+              Tengo más de 15 años de experiencia en varios sectores, siempre
+              buscando un lugar para dar lo mejor de mí y crecer profesionalmente.
             </p>
-            <ul class="skills" aria-label="Conocimientos">
-               <li><a href="https://github.com/marianmmr8" target="_blank">Github</a></li>
-                <li><a href="https://github.com/marianmmr8/galletagame" target="_blank">Galleta game</a> </li>
-              <li> <a href="https://github.com/marianmmr8/adolescentes" target="_blank">Adolescentes</a></li>
-              <li> <a href="clubdemontana.vercel.app" target="_blank">Club de Montaña</a></li>
-            <li> <a href="https://github.com/marianmmr8/github.com-marianmmr8-Portfolio-cv-Marian" target="_blank">Mi primer Portfolio</a></li>
-              <li> <a href="https://github.com/marianmmr8/miprimeritaweb-main" target="_blank">Webs</a></li>
+            <ul class="skills" aria-label="Experiencia y currículum">
+              <li><a href="mariancv.pdf" download>Descargar CV en PDF</a></li>
+              <li><a href="trabajos.html" target="_blank" rel="noopener noreferrer">Hostelería</a></li>
+              <li><a href="trabajosdependienta.html" target="_blank" rel="noopener noreferrer">Atención al cliente</a></li>
+              <li><a href="trabajosadministrativa.html" target="_blank" rel="noopener noreferrer">Administrativo</a></li>
             </ul>
-          
-            <div class="about">
-             <p> Curiosa y Motivada. Aprendiendo a diario sobre Desarrollo web. </p>
-            </div>
           </article>
-          </section>  
-         
         </section>
       </main>
 
